@@ -20,7 +20,7 @@ jobs:
         name: "Build Docs"
       - run: |
          cd docs/
-         sudo source .travis/before_install.sh
+         sudo su source .travis/before_install.sh
          sudo npm ci
          sudo source .travis/script.sh
         env:
